@@ -339,20 +339,6 @@ COPY customer_address (customer_id, address_id) FROM stdin;
 
 
 --
--- Name: id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('id_seq', 1, false);
-
-
---
--- Name: notif_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('notif_log_id_seq', 1, false);
-
-
---
 -- Data for Name: order; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -744,19 +730,6 @@ COPY "order" (id, customer_id, store_id, placed_at, total) FROM stdin;
 512	23	10	2017-03-03 00:00:00	3750
 \.
 
-
---
--- Name: pay_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('pay_seq', 1, false);
-
-
---
--- Name: ref_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('ref_log_id_seq', 1, false);
 
 
 --
