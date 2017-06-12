@@ -1,15 +1,3 @@
-For all of the following questions the desired results will be the data you're returning and then also the query used.
-
-Ex: 
-"What is your favorite number?"
-
-Answer:
-42
-
-SQL:
-select 42;
-
-
 1. How many stores have orders, and how many orders does each store have? 
 2. Regardless of store, what were the three months with the highest number of orders made? What were their totals?
 4. What are the three stores with the highest average order value overall?
