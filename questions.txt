@@ -1,6 +1,6 @@
 1. How many stores have orders, and how many orders does each store have? 
 2. Regardless of store, what were the three months with the highest number of orders made? How many orders were there in those months?
-4. What are the three stores with the highest average order value overall?
+4. What are the three stores (name and id) with the highest average order value overall?
 5. What are the three stores (name and id) with the highest number of orders made in March of 2017? How many orders did each of them have?
 6. What was the total number of sales, and total value of all sales for "Cocktail Saloon Crafts" for each month present in the data?
 7. What are the three top stores (name and id) with the highest average order value in April 2017?
