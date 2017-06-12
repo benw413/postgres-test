@@ -85,30 +85,6 @@ CREATE TABLE customer_address (
 
 
 --
--- Name: id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: notif_log_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE notif_log_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
 -- Name: order; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -119,31 +95,6 @@ CREATE TABLE "order" (
     placed_at timestamp without time zone DEFAULT now() NOT NULL,
     total integer NOT NULL
 );
-
-
---
--- Name: pay_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE pay_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: ref_log_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE ref_log_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
 
 --
 -- Name: store; Type: TABLE; Schema: public; Owner: -; Tablespace: 
