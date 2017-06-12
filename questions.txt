@@ -1,4 +1,4 @@
-1. How many stores have orders, and how many orders does each store have? 
+1. How many orders does each store with orders have? 
 
 2. Regardless of store, what were the three months with the highest number of orders made? 
 
