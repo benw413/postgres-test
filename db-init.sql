@@ -107,29 +107,6 @@ CREATE TABLE store (
 
 
 
-ALTER TABLE ONLY customer 
-    ADD CONSTRAINT customer_id_pkey PRIMARY KEY (id);
-ALTER TABLE ONLY address 
-    ADD CONSTRAINT address_id_pkey PRIMARY KEY (id);
-ALTER TABLE ONLY "order" 
-    ADD CONSTRAINT order_id_pkey PRIMARY KEY (id);
-ALTER TABLE ONLY store
-    ADD CONSTRAINT store_id_pkey PRIMARY KEY (id);
-
-ALTER TABLE ONLY customer_address
-    ADD CONSTRAINT customer_address_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE;
-
-ALTER TABLE ONLY customer_address
-    ADD CONSTRAINT customer_address_address_id_fkey FOREIGN KEY (address_id) REFERENCES address(id) ON DELETE CASCADE;
-
-ALTER TABLE ONLY "order"
-    ADD CONSTRAINT order_store_id_fkey FOREIGN KEY (store_id) REFERENCES store(id) ON DELETE CASCADE;
-
-ALTER TABLE ONLY "order"
-    ADD CONSTRAINT order_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE;
-
-
-
 --
 -- Data for Name: address; Type: TABLE DATA; Schema: public; Owner: -
 --
@@ -748,6 +725,32 @@ COPY store (id, name) FROM stdin;
 9	Loose Simplicity
 10	Cocktail Saloon Crafts
 \.
+
+
+
+
+ALTER TABLE ONLY customer 
+    ADD CONSTRAINT customer_id_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY address 
+    ADD CONSTRAINT address_id_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY "order" 
+    ADD CONSTRAINT order_id_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY store
+    ADD CONSTRAINT store_id_pkey PRIMARY KEY (id);
+
+ALTER TABLE ONLY customer_address
+    ADD CONSTRAINT customer_address_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE;
+
+ALTER TABLE ONLY customer_address
+    ADD CONSTRAINT customer_address_address_id_fkey FOREIGN KEY (address_id) REFERENCES address(id) ON DELETE CASCADE;
+
+ALTER TABLE ONLY "order"
+    ADD CONSTRAINT order_store_id_fkey FOREIGN KEY (store_id) REFERENCES store(id) ON DELETE CASCADE;
+
+ALTER TABLE ONLY "order"
+    ADD CONSTRAINT order_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE;
+
+
 
 
 --
