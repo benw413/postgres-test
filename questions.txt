@@ -6,7 +6,7 @@
 
 4. What are the three stores (name and id) with the highest number of orders made in March of 2017? 
 
-5. How many orders did each of the stores have from question 5?
+5. How many orders did each of the stores have from question 4?
 
 6. What was the total number of sales, and total value of all sales for "Cocktail Saloon Crafts" for each month present in the data?
 
