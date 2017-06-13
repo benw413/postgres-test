@@ -4,12 +4,10 @@
 
 3. What are the three stores (name and id) with the highest average order value overall?
 
-4. What are the three stores (name and id) with the highest number of orders made in March of 2017? 
+4. What are the three stores (name and id) and their order counts for stores the highest number of orders made in March of 2017? 
 
-5. How many orders did each of the stores have from question 4?
+5. What was the total number of sales, and total value of all sales for "Cocktail Saloon Crafts" for each month present in the data?
 
-6. What was the total number of sales, and total value of all sales for "Cocktail Saloon Crafts" for each month present in the data?
+6. What are the three top stores (name and id) with the highest average order value in April 2017?
 
-7. What are the three top stores (name and id) with the highest average order value in April 2017?
-
-8. Bonus: How many sales went to customers who have more than one address in the database? What was the dollar value of those sales? 
+7. Bonus: How many sales went to customers who have more than one address in the database? What was the dollar value of those sales? 
